@@ -1,105 +1,99 @@
-
 /* Базовые стили */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .block {
-    width: 100%;
-    max-width: 100%;
-    height: 400px;
-  }
-  
-  
-  /* Медиа-запросы для различных контрольных точек */
-  @media screen and (min-width: 320px) and (max-width: 568px) {
-    .block {
-        height: 400px;
-     
-    }
-    .text{
-        font-size: 16px;
-    }
-  }
-  
-  @media screen and (min-width: 820px) and (max-width: 1180px) {
-    .block {
-      height: 400px;
-      max-width: 780px;
-    }
-    .text{
-        font-size: 30px;
-    }
-  }
-  
-  @media screen and (min-width: 1920px) {
-    .block {
-      height: 400px; 
-      font-size: 20px;
-    }
-  }
-
-  .main {
-    cursor: pointer;
-    width: 100%;
-    max-width: 100%;
-    height: 400px;
-    
-  }
-  .meme {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-  }
-  .meme:hover .fas{
-    color: rgb(247, 37, 37);
-    transform: rotate(90deg);
-  }
-  .meme:hover .text{
-    color: rgb(196, 50, 50);
-  }
-  .text {
-    display: inline-block;
-  }
-  .fas {
-    display: inline-block;
-    transform: rotate(0deg);
-    transition: transform 0.5s ease;
-  }
-  
-  .fa-times {
-    transform: rotate(45deg);
-    display: inline-block;
-    position: absolute;
-    right: 0;
-  }
-
- 
-  .img-container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.2s ease-in-out;
-    position: relative;
-    width: 100%;
-  }
-   .img{
-    opacity: 0;
-   }
-  .img:hover {
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-  }
-  .img:focus {
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-  } 
-  input[name="r"] {
-   position: absolute;
-   visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.block {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+
+/* Медиа-запросы для различных контрольных точек */
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .block {
+    height: 400px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .block {
+    height: 400px;
+    max-width: 780px;
+  }
+  .text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .block {
+    height: 400px;
+    font-size: 20px;
+  }
+}
+
+.main {
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+.meme {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.meme:hover .fas {
+  color: rgb(247, 37, 37);
+  transform: rotate(90deg);
+}
+.meme:hover .text {
+  color: rgb(196, 50, 50);
+}
+.text {
+  display: inline-block;
+}
+.fas {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.fa-times {
+  transform: rotate(45deg);
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+  position: relative;
+  width: 100%;
+}
+.img {
+  opacity: 0;
+}
+.img:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.img:focus {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
